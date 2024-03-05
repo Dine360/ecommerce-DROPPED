@@ -54,7 +54,9 @@ public class Order {
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
-
+    public void updateTotalPrice(double pricePerUnit) {
+        this.totalPrice = quantity * pricePerUnit;
+    }
     @Override
     public String toString() {
         return "Order{" +
