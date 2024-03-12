@@ -1,4 +1,6 @@
-package com.ecommerce.Entity;
+package com.ecommerce.entity;
+
+
 
 public class Order {
     private String id;

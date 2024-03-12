@@ -17,8 +17,16 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	runtimeOnly 'com.mysql:mysql-connector-j'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	//runtimeOnly 'com.mysql:mysql-connector-j'
+	runtimeOnly 'mysql:mysql-connector-java:8.0.26'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa
+	implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.6.0'
+	implementation 'javax.persistence:javax.persistence-api:2.2'
+
 }
 
 tasks.named('test') {

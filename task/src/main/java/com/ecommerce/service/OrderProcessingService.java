@@ -1,6 +1,7 @@
-package com.ecommerce.Service;
+package com.ecommerce.service;
 
-import com.ecommerce.Entity.Order;
+import com.ecommerce.entity.Order;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
